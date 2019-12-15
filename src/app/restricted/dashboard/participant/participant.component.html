@@ -1,0 +1,40 @@
+<style>
+  .border-bottom-poupe{
+border-bottom: 1px solid #c363fb;
+  }
+</style>
+<div class="container ">
+    <div class="row">
+        <div class="col-md-4">
+            <app-profile [id]='idParticipante'></app-profile>
+        </div>
+        <div class="col-md-8">
+            <div class="card text-white bg-dark " >
+                <div class="card-header border-bottom-poupe">Dados do Participante - {{idParticipante}} </div>
+                <div class="card-body">
+                    <div class="list-group">
+                        <div class="list-group-item bg-dark border-0">
+                            <div class="row border-bottom-poupe py-2">
+                                <div class="col-md-6">Matrícula</div>
+                                <div class="col-md-6">98327541</div>
+                              </div>
+                          <div class="row border-bottom-poupe py-2">
+                            <div class="col-md-6">Data de Adesão </div>
+                            <div class="col-md-6">10/12/2018  </div>
+                          </div>
+                          <div class="row border-bottom-poupe py-2">
+                              <div class="col-md-6">Percentual de Contribuição</div>
+                              <div class="col-md-6">6% </div>
+                          </div>
+                            <div class="row border-bottom-poupe py-2">
+                                <div class="col-md-6">Perfil de Investimento</div>
+                                <div class="col-md-6">Agressivo </div>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

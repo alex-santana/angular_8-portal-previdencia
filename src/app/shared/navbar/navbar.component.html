@@ -1,0 +1,47 @@
+<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar fixed-top">
+  <div class="container">
+    <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="PoupePrev">
+      <img src="assets/images/logo.png" width="150" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsieve">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav bd-navbar-nav flex-row ml-auto">
+        <li class="nav-item">
+          <a class="nav-link " [routerLink]="['/home']" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item dropdown" dropdown>
+            <a [routerLink]="['/linha']" class="nav-link dropdown-toggle" dropdownToggle id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plano</a>
+            <div class="dropdown-menu" *dropdownMenu aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" >Link 1</a>
+                <a class="dropdown-item" >Link 2</a>
+                <a class="dropdown-item" >Link 3</a>
+                <a class="dropdown-item" >Link 4</a>
+              </div>
+        </li>
+         <li class="nav-item" *ngIf="authService.userData as user">
+        <!-- <li class="nav-item" *ngIf="showMenuRestrict"> -->
+          <a class="nav-link" [routerLink]="['/profile']" routerLinkActive="active" >{{user.email}}</a>
+        </li>
+        
+        <!--Outra forma de usar o ngIf com then e else-->
+        <ng-container *ngIf="isLogged; then userLogged; else userLoggedOut"></ng-container>
+        <ng-template #userLoggedOut>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/signin']" routerLinkActive="active" >Login</a>
+          </li>
+        </ng-template>
+        <ng-template #userLogged>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="active" >Dashboard</a>
+              </li>
+          <li class="nav-item" >
+            <a class="nav-link" routerLinkActive="active" (click)="authService.SignOut()">sair</a>
+          </li>
+        </ng-template>
+       
+      </ul>
+    </div>
+  </div>
+</header>

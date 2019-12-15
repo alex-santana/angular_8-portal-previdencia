@@ -1,0 +1,19 @@
+
+<div class="container mt-5">
+<div class="d-flex justify-content-center  " >
+        <div class="card mt-5 p-1 mr-1 fade-in" routerLinkActive="card-active"  *ngFor="let item of itens">
+        <a [routerLink]="[item.Name | lowercase, {id: idParticipante}]"  >
+            <img class="card-img-top" src="{{item.Image}}"  alt="Card image cap">
+            <div class="card-body ">
+                <p class="card-text text-center"> {{item.Name | uppercase}}</p>
+                
+            </div>
+        </a>
+        </div>
+
+</div>
+</div>
+
+<div class="container-fluid mt-5 border bg-dark" style="min-height: 450px;">
+    <router-outlet ></router-outlet>
+</div>

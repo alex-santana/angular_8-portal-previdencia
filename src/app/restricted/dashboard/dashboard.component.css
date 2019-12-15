@@ -1,0 +1,64 @@
+.card{
+  width: 10%;
+  font-weight: bold;
+  font-size: 85%;
+  white-space: nowrap;
+  
+}
+.card>a{
+  text-decoration:none;
+}
+.card-body{
+  display: none;
+}
+.card:hover{
+  background: #c363fb;
+  background:#343a40;
+  width: 16%;
+}
+.card:hover .card-img-top
+{
+  display: none;
+
+}
+.card:hover .card-body{
+  display: block!important;
+  color: #fff;
+}
+
+.card-active{
+  background: #c363fb!important;   
+  width: 20%;
+}
+
+.card-active>a{
+  color: #FFF;
+  text-decoration-style: none;
+}
+
+.card-active>a>img{
+  display: none;
+  
+}
+
+.card-active .card-body{
+  display: block;
+}
+
+.fade-in
+{
+  opacity: 1;
+animation-name: fadeInOpacity;
+animation-iteration-count: 1;
+animation-timing-function: ease-in;
+animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}

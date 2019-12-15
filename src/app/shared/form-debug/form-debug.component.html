@@ -1,0 +1,13 @@
+
+<div class="my-5 " *ngIf="form">
+    <div class="card" style="width: 28rem;">
+            <div class="card-header">
+                Detalhes do formulário
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><pre>Form Válido: {{form.valid}}</pre></li>
+              <li class="list-group-item "><pre>Form Submetido: {{form.submitted}}</pre></li>
+              <li class="list-group-item bg-secondary "><pre class="text-white">Valores:<br> {{form.value | json }}</pre></li>
+            </ul>
+          </div>
+</div>

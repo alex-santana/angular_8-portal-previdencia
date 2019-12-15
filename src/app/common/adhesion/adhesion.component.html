@@ -1,0 +1,50 @@
+<style>
+        .fade-in
+        {
+          opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+        }
+        @keyframes fadeInOpacity {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+        }
+        </style>
+<div class="container-fluid mt-5 border bg-light " style="min-height: 250px;">
+<div class="container fade-in">
+        <p class="text-center mt-4">Todos os empregados e dirigentes das unidades da Poupe no Brasil, suas coligadas e controladas que
+                mantenham convênio de adesão com a PoupePrev, poderão solicitar sua inscrição no Plano de
+                Aposentadoria Complementar Embraer Prev.
+                
+               </p>
+                
+               <p class="text-center"><strong> O processo é simples, basta seguir os passos abaixo:</strong></p>
+    <div class="d-flex justify-content-around">
+        
+        <div class="card text-center bg-light border-0" style="width: 25%;">
+                <img src="https://image.flaticon.com/icons/svg/1467/1467549.svg" alt="" width="150px" height="200px" class="card-img-top mt-2">
+            
+            <div class="card-body">
+                    <h5 class="card-title">Passo 1</h5>
+                <p class="card-text">Você deverá baixar, imprimir,preencher e assinar o <a [routerLink]="['/cadastro-participante']" > Formulário de Inscrição</a></p>
+            </div>
+        </div>
+
+        <div class="card text-center bg-light border-0" style="width: 25%;">
+                <img src="https://image.flaticon.com/icons/svg/91/91848.svg" alt="" width="150px" height="200px" class="card-img-top">
+            
+            <div class="card-body">
+                    <h5 class="card-title">Passo 2</h5>
+                <p class="card-text">Enviar para o endereço da PoupePrev que consta na Ficha de
+                        Inscrição, juntamente com a cópia de um documento de identificação</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,73 @@
+<style>
+a{
+   color: #fff;
+}
+</style>
+
+  <div class="banner">
+  <div class="options">
+    <div class="option active" #dvoption (click)="ShowOption(dvoption)" style="--optionBackground:url(assets/images/banner/poupe_adesao.jpg);">
+       <div class="shadow"></div>
+       <div class="label">
+          <div class="icon">
+             <i class="fas fa-walking"><img src="https://image.flaticon.com/icons/svg/137/137765.svg" alt="" width="32"></i>
+          </div>
+          <div class="info">
+             <div class="main"><a [routerLink]="['adesao']"> Adesão </a></div>
+             <div class="sub">Faça sua inscrição para o Plano PoupePrev</div>
+          </div>
+       </div>
+    </div>
+    <div class="option" #dvoption2 (click)="ShowOption(dvoption2)" style="--optionBackground:url(assets/images/banner/poupe_plantando.jpg);">
+    <!-- <div class="option" #dvoption2 (click)="ShowOption(dvoption2)" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);"> -->
+       <div class="shadow"></div>
+       <div class="label">
+          <div class="icon">
+             <i class="fas fa-snowflake"><img src="https://image.flaticon.com/icons/svg/584/584093.svg" width='32' alt="" srcset=""></i>
+          </div>
+          <div class="info">
+             <div class="main"><a [routerLink]="['contribuicao']"> Contribuições</a></div>
+             <div class="sub">Como funciona a contribuição na PoupePrev</div>
+          </div>
+       </div>
+    </div>
+    <div class="option" #dvoption3 (click)="ShowOption(dvoption3)" style="--optionBackground:url(assets/images/banner/poupe_beneficio.jpg);">
+       <div class="shadow"></div>
+       <div class="label">
+          <div class="icon">
+             <i class="fas fa-tree"><img src="https://image.flaticon.com/icons/svg/126/126157.svg" width="32" alt=""></i>
+          </div>
+          <div class="info">
+             <div class="main"><a [routerLink]="['beneficio']">Benefícios</a></div>
+             <div class="sub">Omuke trughte a otufta</div>
+          </div>
+       </div>
+    </div>
+    <div class="option" #dvoption4 (click)="ShowOption(dvoption4)" style="--optionBackground:url(assets/images/banner/poupe_institutos.jpg);">
+       <div class="shadow"></div>
+       <div class="label">
+          <div class="icon">
+             <i class="fas fa-tint"><img src="https://image.flaticon.com/icons/svg/149/149176.svg" width="32" alt=""></i>
+          </div>
+          <div class="info">
+             <div class="main"><a [routerLink]="['institutos']">Institutos</a></div>
+             <div class="sub">Omuke trughte a otufta</div>
+          </div>
+       </div>
+    </div>
+    <div class="option" #dvoption5 (click)="ShowOption(dvoption5)" style="--optionBackground:url(assets/images/banner/poupe_poupanca.jpg);">
+       <div class="shadow"></div>
+       <div class="label">
+          <div class="icon">
+             <i class="fas fa-sun"><img src="https://image.flaticon.com/icons/svg/126/126121.svg" width='30' alt=""></i>
+          </div>
+          <div class="info">
+             <div class="main"><a [routerLink]="['simuladores']">Simuladores</a></div>
+             <div class="sub">Omuke trughte a otufta</div>
+          </div>
+       </div>
+    </div>
+ </div>
+</div>
+ 
+ <!-- <a href="http://victorofvalencia-blog.tumblr.com" target="_blank" class="credit">Photos from Victor of Valencia on tumblr</a> -->
